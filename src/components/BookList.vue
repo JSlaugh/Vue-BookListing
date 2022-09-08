@@ -1,11 +1,22 @@
 <template>
-
+<div>
+    <h1>
+        {{title}}
+    </h1>
+</div>
 </template>
 <script>
     export default{
+        name: 'Booklist',
         data(){
-            return this.title = "All Books"
+            return{
+            title: "All Books"
+            }
         }
     }
 </script>
-<style></style>
+<style>
+    h1, h2{
+        font-weight: normal;
+    }
+</style>
